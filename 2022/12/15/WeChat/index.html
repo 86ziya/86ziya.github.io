@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://86ziya.github.io/img/R-C.jpg">
 <meta property="article:published_time" content="2022-12-15T12:22:15.000Z">
-<meta property="article:modified_time" content="2022-12-15T15:29:20.584Z">
+<meta property="article:modified_time" content="2022-12-23T12:13:46.544Z">
 <meta property="article:author" content="ziya">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://86ziya.github.io/img/R-C.jpg">
@@ -268,7 +268,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          540 字
+          1.4k 字
         
       </span>
     
@@ -279,7 +279,7 @@
         
         
         
-          5 分钟
+          12 分钟
         
       </span>
     
@@ -395,9 +395,30 @@
 <li>后端服务:  不使用云服务</li>
 <li>模板选择：JavaScript</li>
 </ol>
-<h2 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h2><p>Stable Build创建项目后，可以直接$\textcolor{red}{编译}$，能在模拟器里看到项目效果</p>
-<p>也可以生成$\textcolor{red}{预览}$二维码，直接用WeChat扫描就可以看到实机效果了</p>
-<p><text class="note note-primary">标签</text></p>
+<h2 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h2><p>查看微信小程序在真机里的效果：</p>
+<p>Stable Build创建项目后，可以直接<strong>编译</strong>，能在模拟器里看到项目效果</p>
+<p>也可以生成<strong>预览</strong>二维码，直接用WeChat扫描就可以看到实机效果了</p>
+<h2 id="机型"><a href="#机型" class="headerlink" title="机型"></a>机型</h2><p>微信小程序开发用的机型选择 iphone6&#x2F;7&#x2F;8</p>
+<h1 id="微信开发者工具-1"><a href="#微信开发者工具-1" class="headerlink" title="微信开发者工具"></a>微信开发者工具</h1><p>微信官方文档：<a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/framework/">https://developers.weixin.qq.com/miniprogram/dev/framework/</a></p>
+<p>也可以在微信开发者工具 -》 帮助 -》开发者文档打开</p>
+<h2 id="资源管理器"><a href="#资源管理器" class="headerlink" title="资源管理器"></a>资源管理器</h2><p>1，目录结构：<a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/framework/structure.html">https://developers.weixin.qq.com/miniprogram/dev/framework/structure.html</a></p>
+<p>2，小程序的4种json配置文件</p>
+<ol>
+<li>项目跟目录中的app.json配置</li>
+<li>项目跟目录中的project.config.json配置文件</li>
+<li>项目跟目录中的sitemap.json配置文件</li>
+<li>每个页面文件夹中的.json配置文件</li>
+</ol>
+<p>配置小程序：<a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/framework/config.html">https://developers.weixin.qq.com/miniprogram/dev/framework/config.html</a></p>
+<h3 id="创建页面"><a href="#创建页面" class="headerlink" title="创建页面"></a>创建页面</h3><p>app.json -》pages块 -》 “pages&#x2F;newPage&#x2F;index”</p>
+<h3 id="修改页面首页"><a href="#修改页面首页" class="headerlink" title="修改页面首页"></a>修改页面首页</h3><p>app.json 的pages 块，根据顺序来决定首页</p>
+<p><em>newPage就是首页了</em></p>
+<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs n1ql">&quot;pages&quot;:[<br>   &quot;pages/newPage/<span class="hljs-keyword">index</span><span class="hljs-string">&quot;,</span><br><span class="hljs-string">   &quot;</span>pages/<span class="hljs-keyword">index</span>/<span class="hljs-keyword">index</span><span class="hljs-string">&quot;,</span><br><span class="hljs-string">   &quot;</span>pages/logs/logs<span class="hljs-string">&quot;</span><br><span class="hljs-string"> ],</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="小程序运行时"><a href="#小程序运行时" class="headerlink" title="小程序运行时"></a>小程序运行时</h2><p>运行机制：<a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/framework/runtime/operating-mechanism.html">https://developers.weixin.qq.com/miniprogram/dev/framework/runtime/operating-mechanism.html</a></p>
+<p>更新机制：<a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/framework/runtime/update-mechanism.html">https://developers.weixin.qq.com/miniprogram/dev/framework/runtime/update-mechanism.html</a></p>
+<h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><p>各种UI组件</p>
+<p>文档：<a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/component/cover-image.html">https://developers.weixin.qq.com/miniprogram/dev/component/cover-image.html</a></p>
 
                 
               </div>
@@ -487,6 +508,12 @@
                 <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/2022/12/16/wxml-wxss/" title="wxml+wxss">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">wxml+wxss</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">
